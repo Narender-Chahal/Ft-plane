@@ -452,6 +452,7 @@ ul {
 
 ul {
     padding: 0;
+    margin-bottom: 0;
 }
 
 .box_white1:hover {
