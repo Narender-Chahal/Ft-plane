@@ -197,6 +197,11 @@
     padding: 8px 10px;
 }
 
+.img_hvr:hover {
+    box-shadow: 0px 4px 6px 8px rgba(2, 2, 49, 0.679);
+    border-radius: 213px;
+}
+
 ul {
     padding-left: 10px;
 }
