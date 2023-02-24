@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FT PLANE</title>
+        <link rel="icon" href="/assets/img/png/logo_img.png">
+        <!-- my bootstrap link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!-- my css link -->
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <!-- my root link -->
+        <link rel="stylesheet" href="/assets/css/root.css">
+        <!-- slick -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+            integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- slick theam min css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+            integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- aos animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+        <!-- header -->
+        <header class="bg_img min-vh-100 pb-5">
+            <!-- nav bar -->
+            <nav class="pt-4">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center z-3">
+                            <img src="/assets/img/png/logo_img.png" alt="logo_img.png">
+                            <a class="ff_m fw-bolder fs_xlg text-white ps-2 " href="#">FT
+                                PLANE</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex h_20 justify-content-between flex-column d-lg-none z-3"
+                                onclick="nav_op()">
+                                <span class="icon"></span>
+                                <span class="icon"></span>
+                                <span class="icon"></span>
+                            </div>
+                            <ul class="d-flex align-items-center mb-0  nav_responsive" id="nav_open">
+                                <li class=" mb-0"><a class="ff_m fw-semibold fs_md text-white position-relative line"
+                                        href="#">All Flight</a>
+                                </li>
+                                <li class="ps-lg-5 pt-4 pt-lg-0 mb-0"><a
+                                        class="ff_m fw-semibold fs_md text-white position-relative line"
+                                        href="#">Schedule</a>
+                                </li>
+                                <li class="ps-lg-5 pt-4 pt-lg-0 mb-0"><a
+                                        class="ff_m fw-semibold fs_md text-white position-relative line"
+                                        href="#">Passengers</a>
+                                </li>
+                                <li class="ps-lg-5 pt-4 pt-lg-0 mb-0 "><a
+                                        class="ff_m fw-semibold fs_md text-white position-relative line" href="#">Your
+                                        Orders</a>
+                                </li>
+                                <button class="ff_m fw-semibold fs_md brdr text-white ms-lg-5 mt-4 mt-lg-0 ">Let’s
+                                    Fly</button>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="pt-5 mt-5">
+                        <img class="w-100" src="/assets/img/png/Aviation.png" alt="Aviation.png">
+
+                    </div>
+                    <div class="transform_10 ">
+                        <img class="w-100 scale" src="/assets/img/png/aeroplane_img.png" alt="aeroplane_img.png">
+                    </div>
+                    <div class="text-center transform_30 pb-5">
+                        <h3 class=" ff_m fw-bold fs_4xl mb-0 text-white">Travel around the world</h3>
+                        <p class="ff_i fw-normal fs_xsm text-white pt-2">One of the advantages of being disorganized is
+                            that
+                            one is
+                            always having surprising discoveries</p>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <section class="transform_20">
+            <div class="container">
+                <div class="d-flex  ">
+                    <div class="d-flex"><button class="ff_m fw-bold fs_xmd text-white btn_blue">Economy</button></div>
+                    <div> <button class="ff_m fw-semibold fs_xmd btn_white">Busniness</button>
+                    </div>
+                    <div><button
+                            class="ff_m fw-medium border-0 fs_xmd btn_white2 line1 position-relative">First</button>
+                    </div>
+                </div>
+                <div class="box pt_40 pb-5 ">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6 pb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="img_box d-flex align-items-center justify-content-center">
+                                    <img src="/assets/img/png/location.png" alt="location.png">
+                                </div>
+                                <div class="ms-2">
+                                    <h2 class="ff_m fw-semibold fs_xmd mb-0">Location</h2>
+                                    <p class="ff_m fw-normal text-black-50 mb-0 fs_md mb-0">Where are you going?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 pb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="img_box d-flex align-items-center justify-content-center">
+                                    <img src="/assets/img/png/profile-2user.png" alt="location.png">
+                                </div>
+                                <div class="ms-2">
+                                    <h2 class="ff_m fw-semibold fs_xmd mb-0">Travelers</h2>
+                                    <p class="ff_m fw-normal text-black-50 mb-0 fs_md mb-0">Add guest</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 pb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="img_box d-flex align-items-center justify-content-center">
+                                    <img src="/assets/img/png/calendar-2.png" alt="calendar-2.png">
+                                </div>
+                                <div class="ms-2">
+                                    <h2 class="ff_m fw-semibold fs_xmd mb-0">Check-in</h2>
+                                    <p class="ff_m fw-normal text-black-50 mb-0 fs_md mb-0">Add date</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 pb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="img_box d-flex align-items-center justify-content-center">
+                                    <img src="/assets/img/png/calendar-2.png" alt="calendar-2.png">
+                                </div>
+                                <div class="ms-2">
+                                    <h2 class="ff_m fw-semibold fs_xmd mb-0">Check-out</h2>
+                                    <p class="ff_m fw-normal text-black-50 mb-0 fs_md mb-0">Add date</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center pt-3">
+                        <button class="ff_m fw-semibold fs_md btn1">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------- -->
+        <!-- <section class="min_30">
+            <div class="container">
+
+            </div>
+        </section> -->
+        <!-- ---main section---->
+        <main>
+            <!-- --Our Features -->
+            <section class="mt_5 pb-5">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="ff_m fw-bold fs_3xl mb-0">Our Features</h2>
+                    </div>
+                    <div class="row pt-5 justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6 pt-5">
+                            <div class="feature_box ">
+                                <div class="text-center d-flex justify-content-center">
+                                    <div class="img_box2 d-flex align-items-center justify-content-center"><img
+                                            src="/assets/img/png/travel1.png" alt="travel1.png">
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="text-center pt-3">
+                                        <h3 class="ff_m fw-bolder fs_xl mb-0">Best Guide</h3>
+                                    </div>
+                                    <p class="mb-0 ff_m fw-normal fs_md pt-2 text-center">Suspendisse ultrices nibh non
+                                        cursus
+                                        sagittis.
+                                        Morbi dictum consequat ex, quis
+                                        finibus magna.</p>
+                                </div>
+                                <div class="d-flex justify-content-center pt-4">
+                                    <a href="#">
+                                        <div class="box_black d-flex justify-content-center align-items-center">
+                                            <img src="/assets/img/png/arrow.png" alt="arrow.png">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mt-4 mt-sm-0 pt-5  transform_5">
+                            <div class="feature_box ">
+                                <div class="text-center d-flex justify-content-center">
+                                    <div class="img_box2 d-flex align-items-center justify-content-center"><img
+                                            src="/assets/img/png/travel2.png" alt="travel2.png">
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="text-center pt-3">
+                                        <h3 class="ff_m fw-bolder fs_xl mb-0">More Discount</h3>
+                                    </div>
+                                    <p class="mb-0 ff_m fw-normal fs_md pt-2 text-center">Suspendisse ultrices nibh non
+                                        cursus
+                                        sagittis.
+                                        Morbi dictum consequat ex, quis
+                                        finibus magna.</p>
+                                </div>
+                                <div class="d-flex justify-content-center pt-4">
+                                    <a href="#">
+                                        <div class="box_black d-flex justify-content-center align-items-center">
+                                            <img src="/assets/img/png/arrow.png" alt="arrow.png">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mt-sm-4 mt-0 pt-3 pt-sm-5">
+                            <div class="feature_box ">
+                                <div class="text-center d-flex justify-content-center">
+                                    <div class="img_box2 d-flex align-items-center justify-content-center"><img
+                                            src="/assets/img/png/lock.png" alt="lock.png">
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="text-center pt-3">
+                                        <h3 class="ff_m fw-bolder fs_xl mb-0">Private</h3>
+                                    </div>
+                                    <p class="mb-0 ff_m fw-normal fs_md pt-2 text-center">Suspendisse ultrices nibh non
+                                        cursus
+                                        sagittis.
+                                        Morbi dictum consequat ex, quis
+                                        finibus magna.</p>
+                                </div>
+                                <div class="d-flex justify-content-center pt-4">
+                                    <a href="#">
+                                        <div class="box_black d-flex justify-content-center align-items-center">
+                                            <img src="/assets/img/png/arrow.png" alt="arrow.png">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mt-4 pt-5 transform_5">
+                            <div class="feature_box ">
+                                <div class="text-center d-flex justify-content-center">
+                                    <div class="img_box2 d-flex align-items-center justify-content-center"><img
+                                            src="/assets/img/png/travel4.png" alt="travel4.png">
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="text-center pt-3">
+                                        <h3 class="ff_m fw-bolder fs_xl mb-0">Online Support</h3>
+                                    </div>
+                                    <p class="mb-0 ff_m fw-normal fs_md pt-2 text-center">Suspendisse ultrices nibh non
+                                        cursus
+                                        sagittis.
+                                        Morbi dictum consequat ex, quis
+                                        finibus magna.</p>
+                                </div>
+                                <div class="d-flex justify-content-center pt-4">
+                                    <a href="#">
+                                        <div class="box_black d-flex justify-content-center align-items-center">
+                                            <img src="/assets/img/png/arrow.png" alt="arrow.png">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- --Let’s Fly-- -->
+                <section class="py-5 ">
+                <div class="container">
+                    <div class="row justify-content-center overflow-hidden">
+                        <div class="col-lg-6 col-sm-8" data-aos="fade-right">
+                            <img class="w-100" src="/assets/img/png/new_york.png" alt="new_york.png">
+                        </div>
+                        <div class="col-lg-6 pt-5 pt-lg-0 " data-aos="fade-left">
+                            <h3 class="ff_m fw-bolder fs_lg clr_blue mb-0">Let’s Fly</h3>
+                            <p class="ff_m fw-bold fs_xxl mb-0 pt-3 pb-xl-5 pb-lg-2 pb-3">It’s one of the leading
+                                online flight
+                                booking
+                                platforms in the world</p>
+
+                            <!-- <ul>
+                                
+                            </ul> -->
+                            <div class="timelines ">
+                                <div class="time_line_items">
+                                    <li class="ff_m fw-medium fs_md mb-0  ">Contrary to
+                                        popular
+                                        belief, Lorem Ipsum is not simply random text</li>
+                                </div>
+                                <div class=" ps_10 dot position-relative">
+                                    <li class="ff_m fw-medium fs_md mb-0  pt-2">If you are going to use a passage of
+                                        Lorem
+                                        Ipsum</li>
+                                </div>
+                                <div class="time_line_items">
+                                    <li class="ff_m fw-medium fs_md mb-0  pt-2">Lorem Ipsum is therefore always free
+                                        from
+                                        repetition, injected humour, or non-characteristic words etc.</li>
+                                </div>
+
+
+                            </div>
+                            <div class="time_line_items">
+                                <li class="ff_m fw-medium fs_md mb-0  pt-2">It is a long established fact that a
+                                    reader will be distracted by the readable content of a page when looking at its
+                                    layout.</li>
+                            </div>
+                            <div class=" pt-xl-5 pt-lg-2 pt-4">
+                                <button class="ff_m fw-semibold fs_md btn1">Book Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- --Book Popular Flight Tickets-- -->
+            <section class="bg_darkblue pt-5 ">
+                <div class="container">
+                    <div class="row pb-5 overflow-hidden">
+                        <div class="col-xl-6" data-aos="fade-right">
+                            <h3 class="ff_m fw-bold fs_3xl text-white mb-0 mw_400">Book Popular Flight Tickets</h3>
+                            <p class="ff_m text-white fw-normal fs_md mb-0 pt-3 mw_400">Lorem Ipsum is simply dummy text
+                                of
+                                the printing and
+                                typesetting industry. Lorem Ipsum has
+                                been the industry's</p>
+                            <div class="pt-2" data-aos="zoom-in">
+                                <img class="mw_250px rolling" src="/assets/img/png/eath.png" alt="eath.png">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 pb-xl-0 pb-4" data-aos="fade-left">
+                            <div class="row pt-xl-0 pt-5">
+                                <div class="col-sm-8 ">
+                                    <div class="box_white p-4 position-relative mb-sm-5 mb-2">
+                                        <div class="position-absolute top_5 ">
+                                            <img class="h-100 w_100_xsm d-none d-sm-block"
+                                                src="/assets/img/png/bg_image1.png" alt="bg_image1.png">
+                                        </div>
+                                        <div class="position-absolute end-0 top-0 bottom-0 d-none d-sm-block"><img
+                                                class="opacity-75 w-100" src="/assets/img/png/bg_card.png"
+                                                alt="bg_card.png">
+                                        </div>
+                                        <div class="circle position-absolute top_70 end_1"></div>
+                                        <div class="circle position-absolute top_70 start_1"></div>
+                                        <div class="d-flex justify-content-between">
+                                            <a href="#"><button class="ff_m fw-medium fs_md btn2 clr_blue">Economy
+                                                    Saver</button></a>
+                                            <div class="d-flex align-items-center">
+                                                <h4 class="ff_m fw-semibold fs_md mb-0 pe-2">UK</h4>
+                                                <img src="/assets/img/png/flight.png" alt="flight.png">
+                                                <h4 class="ff_m fw-semibold fs_md mb-0 ps-2">BD</h4>
+                                            </div>
+
+                                        </div>
+                                        <h3 class="ff_m fw-bold fs_md mb-0 pt-4">6 Flight Tickets</h3>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="pt-4">
+                                                    <h4 class="ff_m fw-normal fs_sm mb-0 text-black-50 ">Passenger</h4>
+                                                    <h3 class="ff_m fw-semibold fs_md mb-0 pt-1">Raju Mullah</h3>
+                                                </div>
+                                                <div class="pt-3">
+                                                    <h4 class="ff_m fw-normal fs_sm mb-0 text-black-50 ">Flight</h4>
+                                                    <h3 class="ff_m fw-semibold fs_md mb-0 pt-1">#5486626661</h3>
+                                                </div>
+                                                <div class="pt-3">
+                                                    <h4 class="ff_m fw-normal fs_sm mb-0 text-black-50 ">Class</h4>
+                                                    <h3 class="ff_m fw-semibold fs_md mb-0 pt-1">Economy</h3>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="pt-4">
+                                                    <h4 class="ff_m fw-normal fs_sm mb-0 text-black-50 ">Date</h4>
+                                                    <h3 class="ff_m fw-semibold fs_md mb-0 pt-1">20 Nov 2022</h3>
+                                                </div>
+                                                <div class="pt-3">
+                                                    <h4 class="ff_m fw-normal fs_sm mb-0 text-black-50 ">Gate</h4>
+                                                    <h3 class="ff_m fw-semibold fs_md mb-0 pt-1">20 A</h3>
+                                                </div>
+                                                <div class="pt-3">
+                                                    <h4 class="ff_m fw-normal fs_sm mb-0 text-black-50 ">Seats</h4>
+                                                    <h3 class="ff_m fw-semibold fs_md mb-0 pt-1">5B - 11B</h3>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="border_bottom"></div>
+                                        <div class="pt-5">
+                                            <img class="w-100" src="/assets/img/png/scaner.png" alt="scaner.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div
+                                        class="d-flex flex-sm-column align-items-end pe-sm-5 pt-sm-5 pt-4 position-relative flex-row ">
+                                        <div class="flex-column d-sm-flex d-none">
+                                            <a class="slide_dot" href="#">
+                                            </a>
+                                            <a class="slide_dot1 mt-2" href="#"></a>
+                                            <a class="slide_dot1 mt-2  " href="#"></a>
+                                            <a class="slide_dot1 mt-2 " href="#"></a>
+                                            <a class="slide_dot1 mt-2 " href="#"></a>
+                                            <a class="slide_dot1 mt-2 " href="#"></a>
+                                        </div>
+
+                                        <div class="pt-5 d-none d-sm-block pe-1">
+                                            <img src="/assets/img/png/line_img.png" alt="line_img.png">
+                                        </div>
+                                        <div
+                                            class="position-absolute top-100 start_3 pt-sm-5  d-flex align-items-center d-sm-block text-center">
+                                            <div class=" ">
+                                                <a class="slide_box d-flex align-items-center justify-content-center"
+                                                    href="#"><img src="/assets/img/png/back_slide.png"
+                                                        alt="back_slide.png"></a>
+                                            </div>
+                                            <div class=" mt-sm-2 ms-3 ms-sm-0">
+                                                <a class="slide_box1 d-flex align-items-center justify-content-center"
+                                                    href="#"><img src="/assets/img/png/next_slide.png"
+                                                        alt="back_slide.png"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Best travelars of this month -->
+            <section class="pt-5 pb-5 ">
+                <div class="container">
+                    <div class="text-center pt-5">
+                        <h2 class="ff_m fw-bold fs_3xl mb-0 text_big">Best travelars of this month</h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6 pt-5">
+                            <div class="white_box" data-aos="fade-up"><img class="w-100"
+                                    src="/assets/img/png/raju_1.png" alt="raju_1.png">
+
+                                <div class="text-center mt_2">
+                                    <img src="/assets/img/png/man_img.png" alt="man_img.png">
+                                    <h2 class="ff_m fw-semibold fs_xlg mb-0 pt-2">Raju Mullah</h2>
+                                    <h3 class="ff_m fw-medium fs_md mb-0 pt-1 text-black-50">@rajumulllah</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 pt-5">
+                            <div class="white_box" data-aos="fade-down"><img class="w-100"
+                                    src="/assets/img/png/raju_2.png" alt="raju_2.png">
+
+                                <div class="text-center mt_2">
+                                    <img src="/assets/img/png/girl_img.png" alt="girl_img.png">
+                                    <h2 class="ff_m fw-semibold fs_xlg mb-0 pt-2">Zaire Vetrovs</h2>
+                                    <h3 class="ff_m fw-medium fs_md mb-0 pt-1 text-black-50">@zairevetrovs</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 pt-5">
+                            <div class="white_box" data-aos="fade-up"><img class="w-100"
+                                    src="/assets/img/png/raju_3.png" alt="raju_3.png">
+
+                                <div class="text-center mt_2">
+                                    <img src="/assets/img/png/girl2_img.png" alt="girl2_img.png">
+                                    <h2 class="ff_m fw-semibold fs_xlg mb-0 pt-2">Marcus Dias</h2>
+                                    <h3 class="ff_m fw-medium fs_md mb-0 pt-1 text-black-50">@marcusdias</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 pt-5">
+                            <div class="white_box" data-aos="fade-down"><img class="w-100"
+                                    src="/assets/img/png/raju_4.png" alt="raju_4.png">
+
+                                <div class="text-center mt_2">
+                                    <img src="/assets/img/png/girl3_img.png" alt="girl3_img.png">
+                                    <h2 class="ff_m fw-semibold fs_xlg mb-0 pt-2">Davis Schleifer</h2>
+                                    <h3 class="ff_m fw-medium fs_md mb-0 pt-1 text-black-50">@davisschleifer</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Our Customer Feedback -->
+            <section class="pt-5 pb-5">
+                <div class="container">
+                    <div class="text-center">
+                        <h3 class="ff_m fw-semibold fs_lg mb-0 clr_blue">What’s our customer saying</h3>
+                        <h2 class="ff_m fw-bold fs_3xl pt-2 mb-0">Our Customer Feedback</h2>
+                    </div>
+                    <div class="row pt-5 overflow-hidden">
+                        <div class="col-lg-7 pt-5" data-aos="fade-right">
+                            <img class="w-100" src="/assets/img/png/custmor_saying.png" alt="custmor_saying.png">
+                        </div>
+                        <div class="col-lg-5 pt-5" data-aos="fade-left">
+                            <div class="slider ">
+                                <div class="box_slide">
+                                    <div class="d-flex align-items-center">
+                                        <img src="/assets/img/png/boys_img.png" alt="boys_img.png">
+                                        <div class="ps-3">
+                                            <h5 class="ff_m fw-semibold fs_md mb-0 pb-2">Jaylon Vaccaro</h5>
+                                            <div class="d-flex">
+                                                <img src="/assets/img/png/star.png" alt="star.png">
+                                                <img class="ms-1" src="/assets/img/png/star.png" alt="star.png">
+                                                <img class="ms-1" src="/assets/img/png/star.png" alt="star.png">
+                                                <img class="ms-1" src="/assets/img/png/star.png" alt="star.png">
+                                                <img class="ms-1" src="/assets/img/png/star.png" alt="star.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3"><i class="ff_m fw-medium fs_xmd text_italic ">There are many
+                                            variations of passages
+                                            of Lorem
+                                            Ipsum available, but the majority
+                                            have suffered alteration in some form,
+                                            by injected humour, or randomised words which don</i></div>
+                                </div>
+
+                                <div class="box_slide ">
+                                    <div class="d-flex align-items-center">
+                                        <img src="/assets/img/png/boys_img.png" alt="boys_img.png">
+                                        <div class="ps-3">
+                                            <h5 class="ff_m fw-semibold fs_md mb-0 pb-2">Jaylon Vaccaro</h5>
+                                            <div class="d-flex">
+                                                <img src="/assets/img/png/star.png" alt="star.png">
+                                                <img class="ms-1" src="/assets/img/png/star.png" alt="star.png">
+                                                <img class="ms-1" src="/assets/img/png/star.png" alt="star.png">
+                                                <img class="ms-1" src="/assets/img/png/star.png" alt="star.png">
+                                                <img class="ms-1" src="/assets/img/png/star.png" alt="star.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3"><i class="ff_m fw-medium fs_xmd text_italic ">There are many
+                                            variations of passages
+                                            of Lorem
+                                            Ipsum available, but the majority
+                                            have suffered alteration in some form,
+                                            by injected humour, or randomised words which don</i></div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-center mt-3">
+                                <div><a class="slider_box3 d-flex align-items-center justify-content-center back"
+                                        href="#">
+                                        <svg width="13" height="22" viewBox="0 0 13 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.9171 1.00006L1.91711 11.0001L11.9171 21.0001" stroke="#010223"
+                                                stroke-width="2" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div><a class="slider_box4 d-flex align-items-center justify-content-center ms-3 next"
+                                        href="#">
+                                        <svg width="13" height="22" viewBox="0 0 13 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.916748 21L10.9167 11L0.91675 0.999999" stroke="white"
+                                                stroke-width="2" />
+                                        </svg></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Make memories with us -->
+            <section class="pb-5">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="ff_m fw-bold fs_3xl pt-2 mb-0">Make memories with us</h2>
+                    </div>
+                    <div class="row pb-5">
+                        <div class="col-sm-3 col_xsm_6 pt-5 "><img class="w-100" src="/assets/img/png/img1.png"
+                                alt="img1.png"></div>
+                        <div class="col-sm-3 col_xsm_6 pt-5 transform_7"><img class="w-100"
+                                src="/assets/img/png/img2.png" alt="img2.png"></div>
+                        <div class="col-sm-3 col_xsm_6 pt-5 "><img class="w-100" src="/assets/img/png/img3.png"
+                                alt="img3.png"></div>
+                        <div class="col-sm-3 col_xsm_6 pt-5 transform_7"><img class="w-100"
+                                src="/assets/img/png/img4.png" alt="img4.png"></div>
+                    </div>
+                </div>
+            </section>
+            <!--  -->
+            <section class="bg_color pt-5  overflow-hidden pb-5" data-aos="flip-right">
+                <div class="container">
+                    <div class="d-flex justify-content-center text-center pt-5">
+                        <h2 class="ff_m fw-bold fs_3xl mb-0 mw_300">Subscribe Newsletter & get letest news</h2>
+
+                    </div>
+                    <div class=" d-sm-flex justify-content-between justify-content-sm-center pt-5 pb-5">
+                        <div class="input_brdr m w_400 d-flex justify-content-between p-2 ps-3">
+                            <input class="ff_r fw-normal fs_lg outline_none p-1 mw_50" type="text"
+                                placeholder="Enter your email address">
+                            <button class="ff_m fw-semibold fs_md text-white btn3 ms-sm-5 ms-1">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer_bg pt-5 overflow-hidden  pb-3" data-aos="zoom-in-up">
+                <div class="container">
+                    <div class="row pt-5">
+                        <div class="col-lg-5">
+                            <div class="d-flex align-items-center ">
+                                <img src="/assets/img/png/logo_img.png" alt="logo_img.png">
+                                <a class="ff_m fw-bolder fs_xlg text-white ps-2 " href="#">FT
+                                    PLANE</a>
+
+                            </div>
+                            <p class="ff_m fw-normal fs_md pt-3 text-white-50 mw_310">There are many variations of
+                                passages of
+                                Lorem Ipsum
+                                available, but the
+                                majority have
+                                suffered alteration in some form</p>
+
+                            <div class="d-flex align-items-center">
+                                <a class="box_white1 d-flex justify-content-around align-items-center" href="#">
+                                    <img src="/assets/img/png/fb.png" alt="fb.png">
+                                </a>
+                                <a class="box_white1 ms-4 d-flex justify-content-around align-items-center" href="#">
+                                    <img src="/assets/img/png/linkdin.png" alt="linkdin.png">
+                                </a>
+                                <a class="box_white1 ms-4 d-flex justify-content-around align-items-center" href="#">
+                                    <img src="/assets/img/png/twiter.png" alt="twiter.png">
+                                </a>
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-7 pt-5 pt-lg-0">
+                            <div class="row">
+                                <div class="col-sm-4 col_xsm_6">
+                                    <h2 class="ff_m fw-bold fs_xl text-white mb-0">Address</h2>
+                                    <ul>
+                                        <li class="pt-2"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Integrations</a>
+                                        </li>
+                                        <li class="pt-3"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Hello</a>
+                                        </li>
+                                        <li class="pt-3"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Intercom</a>
+                                        </li>
+                                        <li class="pt-3"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Customer</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4 col_xsm_6">
+                                    <h2 class="ff_m fw-bold fs_xl text-white mb-0">About</h2>
+                                    <ul>
+                                        <li class="pt-2"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Our Blog</a>
+                                        </li>
+                                        <li class="pt-3"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Customers</a>
+                                        </li>
+                                        <li class="pt-3"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Our Team</a>
+                                        </li>
+                                        <li class="pt-3"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Careers</a>
+                                        </li>
+                                        <li class="pt-3"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Integrations</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4 col_xsm_6 pt-5 pt-sm-0">
+                                    <h2 class="ff_m fw-bold fs_xl text-white mb-0">Support</h2>
+                                    <ul>
+                                        <li class="pt-2"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Test Zoom</a>
+                                        </li>
+                                        <li class="pt-3"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Account</a>
+                                        </li>
+                                        <li class="pt-3"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Support Center</a>
+                                        </li>
+                                        <li class="pt-3"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Live Training</a>
+                                        </li>
+                                        <li class="pt-3"><a class="ff_m fw-normal fs_md text-white-50 text_hvr"
+                                                href="#">Accessibility</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr mt-5">
+
+                    </div>
+                    <div class="text-center pt-5">
+                        <p class="ff_m fw-normal fs_sm text-white ">Copyright &#169;
+                            FT PLANE 2022 All right reserved</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <a id="topBtn" class=" ff_m fw-bold fs_5xl position-fixed d_none bottom-0 end-0 mb-4 me-4" href="#">&#8593;</a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+        <script>
+            function nav_op() {
+                document.getElementById("nav_open").classList.toggle("show");
+                document.body.classList.toggle("overflow-hidden")
+            }
+
+            // back to top
+            const topBtn = document.getElementById("topBtn");
+            topBtn.addEventListener("click", function BackToTop() {
+                document.documentElement.scrollTop = 100
+            })
+
+            window.addEventListener("scroll", function myFun() {
+                if (document.documentElement.scrollTop > 50) {
+                    topBtn.style.display = "block"
+                } else { topBtn.style.display = "none" }
+            })
+        </script>
+        <!-- aos animation -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init({
+                duration: 1800,
+                once: false,
+
+            })
+
+        </script>
+
+
+
+
+        <!-- j quairy min js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- slick min js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            $('.slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: ".back",
+                nextArrow: ".next",
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                responsive: [
+
+                    {
+                        breakpoint: 1500,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: false,
+
+                        }
+                    }, {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: false,
+
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            dots: false,
+                            slidesToScroll: 1,
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        </script>
+
+
+
+    </body>
+
+</html>
