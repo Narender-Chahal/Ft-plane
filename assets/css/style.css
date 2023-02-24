@@ -597,6 +597,10 @@ ul {
         top: 64%;
     }
 
+    .start_3 {
+        left: 2%;
+    }
+
     /* .top_5 {
         top: -5%;
         left: 50%;
@@ -720,6 +724,10 @@ ul {
     .top_5 {
         top: -5%;
         left: 0%;
+    }
+
+    .min_100 {
+        min-height: 80vh;
     }
 }
 
